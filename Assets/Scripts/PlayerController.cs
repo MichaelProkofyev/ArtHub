@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        print("HELL YE");
+    
     }
 
     void ResetPosition (object sender, ControllerInteractionEventArgs args)
