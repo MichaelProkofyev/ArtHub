@@ -16,7 +16,7 @@ public class HeadController : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        print("HELL YE");
+        StateManager.LoadNextScene(other.GetComponent<TeleportSphere>().GetSceneName());
     }
 
 }
