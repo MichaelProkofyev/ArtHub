@@ -8,8 +8,7 @@ public class StateManager : MonoBehaviour
 {
     static string lastScene;
     static StateManager managerInstance = null;
-
-    VRTK_SDKManager manager;
+    
 
     void Start()
     {
@@ -18,7 +17,6 @@ public class StateManager : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
             managerInstance = this;
-            manager = FindObjectOfType<VRTK_SDKManager>();
             SceneManager.LoadScene("main");
         }
     }

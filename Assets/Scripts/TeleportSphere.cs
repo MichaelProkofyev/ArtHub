@@ -11,6 +11,10 @@ public class TeleportSphere : VRTK_InteractableObject
     public bool dragged;
     Rigidbody rb;
 
+    public string sceneName;
+
+
+
     // Use this for initialization
     void Start()
     {
@@ -29,7 +33,6 @@ public class TeleportSphere : VRTK_InteractableObject
     // Update is called once per frame
     override protected void FixedUpdate()
     {
-        Debug.Log(rb.velocity);
         base.FixedUpdate();
         if (returningToStart)
         {
@@ -43,7 +46,7 @@ public class TeleportSphere : VRTK_InteractableObject
             {
                 //
                 returningToStart = false;
-                print("STOPPING");
+             //   print("STOPPING");
                 transform.position = startPosition;
                
             }
